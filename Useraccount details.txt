@@ -1,0 +1,6 @@
+Username: User-Admin
+Password: Adminpassword
+
+
+Username: General-User
+Password: Userpassword
