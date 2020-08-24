@@ -1,0 +1,19 @@
+{ "Name": "Black Battlestrider", "Requirements": "N/A", "Location": "Champions' Hall, Stormwind", "Faction": "Alliance", "Expansion": "Original" }
+{ "Name": "Black Stallion", "Requirements": "Any Human Character or exalted with Stormwind", "Location": "Any Horse Vendor", "Faction": "Alliance",  "Expansion": "Original" }
+{ "Name": "Black War Kodo", "Requirements": "N/A", "Location": "Hall Of Legends, Orgrimmar", "Faction": "Horde",  "Expansion": "Original" }
+{ "Name": "Ashes of Al'ar", "Requirements": "N/A", "Location": "The Eye, Tempest Keep", "Faction": "Both",  "Expansion": "Burning Crusade" }
+{ "Name": "Black Hawkstrider", "Requirements": "Blood Elf character or exalted with Silvermoon City", "Location": "Thuron's Livery, Eversong Woods", "Faction": "Horde",  "Expansion": "Burning Crusade" }
+{ "Name": "Acherus Deathcharger", "Requirements": "Death Knight character", "Location": "Death Knight Starting Area", "Faction": "Both",  "Expansion": "Wrath Of The Lich King" }
+{ "Name": "Argent Hippogryph", "Requirements": "N/A", "Location": "Argent Tournament, Icecrown", "Faction": "Both",  "Expansion": "Wrath Of The Lich King" }
+{ "Name": "Blazing Drake", "Requirements": "N/A", "Location": "Dragon Soul (Normal & Heroic)", "Faction": "Both",  "Expansion": "Cataclysm" }
+{ "Name": "Darkmoon Dancing Bear", "Requirements": "N/A", "Location": "Darkmoon Faire", "Faction": "Both",  "Expansion": "Cataclysm" }
+{ "Name": "Goblin Trike", "Requirements": "Goblin character or exalted with Blightwater Cartel", "Location": "Orgrimmar", "Faction": "Horde",  "Expansion": "Cataclysm" }
+{ "Name": "Astral Cloud Serpent", "Requirements": "N/A", "Location": "Mogu'shan Vaults", "Faction": "Both",  "Expansion": "Mists Of Pandaria" }
+{ "Name": "Clutch of Ji-Kun", "Requirements": "N/A", "Location": "Throne of Thunder", "Faction": "Both",  "Expansion": "Mists Of Pandaria" }
+{ "Name": "Armored Frostboar", "Requirements": "Achievement-Advanced Husbandry", "Location": "N/A", "Faction": "Both",  "Expansion": "Warlords Of Draenor" }
+{ "Name": "Bristling Hellboar", "Requirements": "N/A", "Location": "Tanaan Jungle", "Faction": "Both",  "Expansion": "Warlords Of Draenor" }
+{ "Name": "Corrupted Dreadwing", "Requirements": "Friendly with Order off the Awakened", "Location": "Tanaan Jungle", "Faction": "Both",  "Expansion": "Warlords Of Draenor" }
+{ "Name": "Antoran Charhound", "Requirements": "N/A", "Location": "Antorus, the Burning Throne", "Faction": "Both",  "Expansion": "Legion" }
+{ "Name": "Beryl Ruinstrider", "Requirements": "Exalted with Argussian Reach", "Location": "Argus", "Faction": "Both",  "Expansion": "Legion" }
+{ "Name": "Azshari Bloatray", "Requirements": "Achievement-Glory of the Eternal Raider", "Location": "N/A", "Faction": "Both",  "Expansion": "Battle For Azeroth" }
+{ "Name": "Bloodgorged Hunter", "Requirements": "N/A", "Location": "Island Expeditions", "Faction": "Both",  "Expansion": "Battle For Azeroth" }
