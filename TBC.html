@@ -1,7 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
 
+td, th {
+  border: 1px solid grey;
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color:grey;
+}
+
+.tab-btn {
+margin: 50px;
+}
+
+button{
+    margin: 20px; position: relative; left: 575px;
+}
+</style>
 </head>
 <body bgcolor="#F2F2F2">
 <title> The Burning Crusade </title>
@@ -13,6 +37,120 @@
 You can select which mounts you have collected to remove them from the list. They will be moved to a "found" section at the bottom of the page.
 </p>
 
+<h1 style ="position: relative; left: 25px;">Not Collected:</h1>
+
+<div class="tab">
+<table id="NotCollected">
+    <tr>
+      <th style="text-align: center;">Name:</th>
+      <th style="text-align: center;">Requirements:</th>
+      <th style="text-align: center;">Location:</th>
+      <th style="text-align: center;">Tick:</th>
+    </tr>
+    <tr>
+      <td>Black Battlestrider</td>
+      <td>N/A</td>
+      <td>Champions' Hall, Stormwind</td>
+      <td><input type="checkbox" name="T1"></td>
+    </tr>
+    <tr>
+      <td>Black Stallion</td>
+      <td>Any Human Character or Exalted with Stormwind</td>
+      <td>Any Horse Vendor</td>
+      <td><input type="checkbox" name="T1"></td>
+    </tr>
+    <tr>
+      <td>Black War Kodo</td>
+      <td>N/A</td>
+      <td>Hall Of Legends, Orgrimmar</td>
+      <td><input type="checkbox" name="T1"></td>
+    </tr>
+  </table>
+</div>
+
+<div class="tab tab-btn">
+<button onclick="tab1_To_tab2();">&darr;&darr;&darr;&darr;&darr;&darr;</button>
+<button onclick="tab2_To_tab1();">&uarr;&uarr;&uarr;&uarr;&uarr;&uarr;</button>
+</div>
+
+  <h1 style ="position: relative; left: 25px;">Collected:</h1>
+
+  <div name="tab">
+  <table id="Collected">
+    <tr>
+        <th style="text-align: center;">Name:</th>
+        <th style="text-align: center;">Requirements:</th>
+        <th style="text-align: center;">Location:</th>
+        <th style="text-align: center;">Tick:</th>
+      </tr>
+  </table>
+</div>
+
+<script>
+
+function tab1_To_tab2(){
+
+var table1 = document.getElementById("NotCollected"),
+    table2 = document.getElementById("Collected"),
+    checkboxs = document.getElementsByName("T1");
+    console.log("Vall = " + checkboxs.length);
+
+    for(var i = 0; i < checkboxs.length; i++)
+        if(checkboxs[i].checked)
+        {
+            var newRow = table2.insertRow(Collected.length),
+                cell1 = newRow.insertCell(0),
+                cell2 = newRow.insertCell(1),
+                cell3 = newRow.insertCell(2),
+                cell4 = newRow.insertCell(3);
+
+                cell1.innerHTML = table1.rows[i+1].cells[0].innerHTML;
+                cell2.innerHTML = table1.rows[i+1].cells[1].innerHTML;
+                cell3.innerHTML = table1.rows[i+1].cells[2].innerHTML;
+                cell4.innerHTML = "<input type='checkbox' name='T2'>";
+
+                var index = table1.rows[i+1].rowIndex;
+                table1.deleteRow(index);
+                i--;
+
+
+            console.log(checkboxs.length);
+        }
+
+}
+
+function tab2_To_tab1(){
+
+var table1 = document.getElementById("NotCollected"),
+    table2 = document.getElementById("Collected"),
+    checkboxs = document.getElementsByName("T2");
+    console.log("Vall = " + checkboxs.length);
+
+    for(var i = 0; i < checkboxs.length; i++)
+        if(checkboxs[i].checked)
+        {
+            var newRow = table1.insertRow(NotCollected.length),
+                cell1 = newRow.insertCell(0),
+                cell2 = newRow.insertCell(1),
+                cell3 = newRow.insertCell(2),
+                cell4 = newRow.insertCell(3);
+
+                cell1.innerHTML = table2.rows[i+1].cells[0].innerHTML;
+                cell2.innerHTML = table2.rows[i+1].cells[1].innerHTML;
+                cell3.innerHTML = table2.rows[i+1].cells[2].innerHTML;
+                cell4.innerHTML = "<input type='checkbox' name='T1'>";
+
+                var index = table2.rows[i+1].rowIndex;
+                table2.deleteRow(index);
+                i--;
+
+
+            console.log(checkboxs.length);
+        }
+
+}
+
+</script>
 
 
 </body>
